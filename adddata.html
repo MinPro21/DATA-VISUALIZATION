@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Data | DATA VISUALIZER</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        overflow: auto;
+      }
+      header > h1 {
+        padding: 50px;
+        text-align: center;
+        font-size: 80px;
+        color: darkorchid;
+        vertical-align: center;
+        font-family: serif;
+      }
+      nav {
+        background-color: white;
+        overflow: hidden;
+      }
+      nav > a {
+        display: inline-flex;
+        color: black;
+        text-decoration: none;
+        padding: 14px 20px;
+        float: inline-start;
+        font-family: serif;
+      }
+
+      nav > a:hover {
+        background-color: blue;
+      }
+
+      .title {
+        text-align: center;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+
+      main > form {
+        background-color: whitesmoke;
+        color: darkorchid;
+        border: 5px;
+        margin-top: 5px;
+        margin-right: 350px;
+        margin-left: 350px;
+        font-family: serif;
+        padding: 5px 20px 15px 20px;
+        border-radius: 10px;
+      }
+
+      main > form > div {
+        word-spacing: 10px;
+      }
+
+      .property {
+        font-size: 25px;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: serif;
+        font-size: medium;
+      }
+
+      .Color {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: #fff;
+      }
+
+      .button {
+        width: 40%;
+        color: white;
+        font-size: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #4daea1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      #previous{
+        float: inline-start;
+      }
+
+      #next {
+        float: inline-end;
+        margin-left: 140px;
+      }
+
+      .button:hover {
+        color: aqua;
+      }
+
+      main > footer {
+        background-color: #333;
+      }
+
+      main > footer > a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+      }
+
+      main > footer > a:hover {
+        color: blue;
+      }
+
+      .copright {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/data-visualization-isolated-icon-simple-element-illustration-technology-concept-icons-editable-logo-sign-symbol-design-142287524.jpg"
+        height="200vh"
+        align="left"
+      />
+      <h1><center>DATA VISUALIZER</center></h1>
+    </header>
+    <hr />
+    <nav>
+      <a href="firstpage.html">HOME</a>
+      <a href="designchart.html">DESIGN CHART</a>
+      <a href="adddata.html">ADD DATA</a>
+      <a href="labelsandfonts.html">LABELS AND FONTS</a>
+      <a href="#">PREVIEW CHART</a>
+      <a href="#">SAVE AND SHARE</a>
+      <a href="#">HELP</a>
+    </nav>
+    <hr />
+    <br /><br />
+    <p class="title">Add Your Data</p>
+    <main>
+      <form>
+        <div>
+          <br />
+          <p class="property">Graph Title:</p>
+          <input type="text" name="GT"><br>
+          <p class="property">X Axis:</p>
+          <input type="text" name="X NAME" />
+          <p class="property">Y Axis:</p>
+          <input type="text" name="Y NAME" />
+          <p class="property">Chart Title:</p>
+          <input type="text" name="CT" />
+          <p class="property">Title Background:</p>
+          <input type="color" class="Color" name="TBG" value="#FFF000" /><br />
+          <p class="property">TITLE COLOR:</p>
+          <input type="color" class="Color" name="TC" value="#FFF420" />
+          <p class="property">Font Size:</p>
+          <input type="number" name="FS" max="22" />
+          <div class="buttons">
+            <a href="designchart.html">
+              <button class="button" type="button" id="previous">
+                Previous
+              </button></a
+            >
+            <a href="labelsandfonts.html">
+              <button class="button" type="button" id="next">Next</button></a
+            >
+          </div>
+        </div>
+      </form>
+      <br />
+      <hr />
+      <br />
+      <footer>
+        <a href="#">Privacy policy</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+        <a href="#" class="copyright">&copy;</a>
+      </footer>
+    </main>
+  </body>
+</html>

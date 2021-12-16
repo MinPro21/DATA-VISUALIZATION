@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEEDBACK | DATA VISUALIZER</title>
+    <link rel="stylesheet" href="style/style2.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/data-visualization-isolated-icon-simple-element-illustration-technology-concept-icons-editable-logo-sign-symbol-design-142287524.jpg"
+        height="200vh"
+        align="left"
+      />
+      <h1><center>DATA VISUALIZER</center></h1>
+    </header>
+    <hr />
+    <main>
+      <form action="feedback.php" method="post">
+        <h1>FEEDBACK</h1>
+        <p>
+          First name:<font color="red">*</font
+          ><input type="text" name="Fname" required />
+        </p>
+        <p>
+          Last name:<font color="red">*</font
+          ><input type="text" name="Lname" required />
+        </p>
+        <fieldset>
+          <legend>Gender:<font color="red">*</font></legend>
+          <input type="radio" name="Gender" value="Male" required /> Male
+          <input type="radio" name="Gender" value="FeMale" required />Female
+          <input type="radio" name="Gender" value="Other" required />Other
+        </fieldset>
+        <p>
+          Contact No:<font color="red">*</font>
+          <input type="number" name="Contact_No" required />
+        </p>
+        <p>
+          E-mail:<font color="red">*</font
+          ><input type="email" name="Email" required />
+        </p>
+        <fieldset>
+          <legend>
+            Is this your first visit to the website?<font color="red">*</font>
+          </legend>
+          <input type="radio" name="Fvisit" value="Yes" required /> Yes<br />
+          <input type="radio" name="Fvisit" value="No" required /> No
+        </fieldset>
+        <br /><br />
+        <fieldset>
+          <legend>
+            How satisfied are you with our website?<font color="red">*</font>
+          </legend>
+          <input type="radio" name="Satisfaction" value="Very satisfied" required /> Very
+          satisfied<br>
+          <input type="radio" name="Satisfaction" value="Satisfied" required />
+          satisfied<br>
+          <input type="radio" name="Satisfaction" value="Neutral" required />
+          Neutral<br>
+          <input type="radio" name="Satisfaction" value="Unsatisfied" required />
+          Unsatisfied<br>
+          <input type="radio" name="Satisfaction" value="Very unsatisfied" required />
+          Very unsatisfied
+        </fieldset>
+        <p>
+          Tell us how we can improve:<textarea
+            rows="8"
+            cols="100"
+            name="Feedback"
+          ></textarea
+          ><br /><br />
+          <button value="SUBMIT" class="button">SUBMIT</button>
+        </p>
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <a href="#">Privacy policy</a>
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+      <a href="#" class="copyright">&copy;</a>
+    </footer>
+  </body>
+</html>

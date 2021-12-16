@@ -1,0 +1,85 @@
+* {
+  box-sizing: content-box;
+  margin: 0%;
+  overflow: auto;
+}
+
+header > h1 {
+  padding: 50px;
+  text-align: center;
+  font-size: 80px;
+  color: darkorchid;
+  vertical-align: center;
+  font-family: serif;
+}
+
+nav {
+  background-color: white;
+}
+nav > a {
+  display: inline-flex;
+  color: black;
+  text-decoration: none;
+  padding: 14px 20px;
+  float: inline-start;
+  font-family: serif;
+}
+
+nav > a:hover {
+  background-color: blue;
+}
+
+main {
+  background-color: white;
+}
+
+main > img {
+  padding-right: 14px;
+  padding-top: 70px;
+}
+
+main > h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 50px;
+  color: darkorchid;
+  font-family: serif;
+}
+
+main > p {
+  padding: 80px 30px;
+  font-size: 30px;
+  color: darkorchid;
+  font-family: serif;
+}
+
+.button {
+  color: white;
+  font-size: 20px;
+  border: none;
+  background-color: #4daea1;
+  border-radius: 8px;
+  margin-top: 65px;
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer > a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+footer > a:hover {
+  color: blue;
+}
+
+.copright {
+  float: right;
+}

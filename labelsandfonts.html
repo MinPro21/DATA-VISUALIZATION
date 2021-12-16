@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Label And Fonts | DATA VISUALIZER</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        overflow: auto;
+      }
+      header > h1 {
+        padding: 50px;
+        text-align: center;
+        font-size: 80px;
+        color: darkorchid;
+        vertical-align: center;
+        font-family: serif;
+      }
+      nav {
+        background-color: white;
+        overflow: hidden;
+      }
+      nav > a {
+        display: inline-flex;
+        color: black;
+        text-decoration: none;
+        padding: 14px 20px;
+        float: inline-start;
+        font-family: serif;
+      }
+
+      nav > a:hover {
+        background-color: blue;
+      }
+
+      .title {
+        text-align: center;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+
+      main > form {
+        background-color: whitesmoke;
+        color: darkorchid;
+        border: 5px;
+        margin-top: 5px;
+        margin-right: 350px;
+        margin-left: 350px;
+        font-family: serif;
+        padding: 5px 20px 15px 20px;
+        border-radius: 10px;
+      }
+
+      main > form > div > h1 {
+        font-weight: bolder;
+        font-size: x-large;
+      }
+
+      main > form > div {
+        word-spacing: 10px;
+      }
+
+      .property {
+        font-size: 25px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: serif;
+        font-size: medium;
+      }
+
+      .Color {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: #fff;
+      }
+
+      .button {
+        width: 40%;
+        color: white;
+        font-size: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #4daea1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      #previous {
+        float: inline-start;
+      }
+
+      #next {
+        float: inline-end;
+        margin-left: 140px;
+      }
+
+      .button:hover {
+        color: aqua;
+      }
+
+      main > footer {
+        background-color: #333;
+      }
+
+      main > footer > a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+      }
+
+      main > footer > a:hover {
+        color: blue;
+      }
+
+      .copright {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/data-visualization-isolated-icon-simple-element-illustration-technology-concept-icons-editable-logo-sign-symbol-design-142287524.jpg"
+        height="200vh"
+        align="left"
+      />
+      <h1><center>DATA VISUALIZER</center></h1>
+    </header>
+    <hr />
+    <nav>
+      <a href="firstpage.html">HOME</a>
+      <a href="designchart.html">DESIGN CHART</a>
+      <a href="adddata.html">ADD DATA</a>
+      <a href="labelsandfonts.html">LABELS AND FONTS</a>
+      <a href="#">PREVIEW CHART</a>
+      <a href="#">SAVE AND SHARE</a>
+      <a href="#">HELP</a>
+    </nav>
+    <hr />
+    <br /><br />
+    <p class="title">Choose Labels And Fonts</p>
+    <main>
+      <form>
+        <div>
+          <br />
+          <h1>Data Labels:</h1>
+          <br />
+          <p class="property">Show Labels:</p>
+          <select name="SL">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <p class="property">X axis Label Direction:</p>
+          <select name="XD">
+            <option value="Horizontal">Horizontal</option>
+            <option value="Vertical">Vertical</option>
+            <option value="Diagonal">Diagonal</option>
+          </select>
+          <p class="property">Y axis Label Direction:</p>
+          <select name="YD">
+            <option value="Horizontal">Horizontal</option>
+            <option value="Vertical">Vertical</option>
+            <option value="Diagonal">Diagonal</option>
+          </select>
+          <p class="property">Font Style:</p>
+          <select name="FS">
+            <option value="Roboto">Roboto</option>
+            <option value="M Plus 2">M Plus 2</option>
+            <option value="Serif">Serif</option>
+            <option value="Poppins">Poppins</option>
+            <option value="Noto Sans">Noto Sans</option>
+          </select>
+          <p class="property">Font Size:</p>
+          <select name="FS">
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+          </select>
+          <p class="property">Lable Color</p>
+          <input type="color" class="Color" name="LC" value="#FFF000" /><br />
+          <div class="buttons">
+            <a href="adddata.html">
+              <button class="button" type="button" id="previous">
+                Previous
+              </button></a
+            >
+            <a href="#">
+              <button class="button" type="button" id="next">Preview</button></a
+            >
+          </div>
+        </div>
+      </form>
+      <br />
+      <hr />
+      <br />
+      <footer>
+        <a href="#">Privacy policy</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+        <a href="#" class="copyright">&copy;</a>
+      </footer>
+    </main>
+  </body>
+</html>

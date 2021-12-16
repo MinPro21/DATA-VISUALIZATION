@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Chart | DATA VISUALIZE</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        overflow: auto;
+      }
+      header > h1 {
+        padding: 50px;
+        text-align: center;
+        font-size: 80px;
+        color: darkorchid;
+        vertical-align: center;
+        font-family: serif;
+      }
+      nav {
+        background-color: white;
+        overflow: hidden;
+      }
+      nav > a {
+        display: inline-flex;
+        color: black;
+        text-decoration: none;
+        padding: 14px 20px;
+        float: inline-start;
+        font-family: serif;
+      }
+
+      nav > a:hover {
+        background-color: blue;
+      }
+
+      nav > p {
+        text-align: center;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+
+      nav > div {
+        padding-bottom: 25px;
+        padding-top: 10px;
+      }
+
+      #ggg {
+        font-weight: bolder;
+        font-family: serif;
+      }
+
+      main > form {
+        background-color: whitesmoke;
+        color: darkorchid;
+        border: 5px;
+        margin-right: 350px;
+        margin-left: 350px;
+        font-family: serif;
+        padding: 5px 20px 15px 20px;
+        border-radius: 10px;
+      }
+
+      main > form > h2 {
+        text-align: center;
+        font-size: 70px;
+      }
+
+      main > form > div > fieldset > legend {
+        font-size: 25px;
+      }
+
+      main > form > div > fieldset {
+        font-size: 20px;
+        word-spacing: 10px;
+      }
+
+      main > form > p {
+        font-size: 30px;
+      }
+
+      main > form > div {
+        word-spacing: 10px;
+      }
+
+      .property {
+        font-size: 25px;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: serif;
+        font-size: medium;
+      }
+
+      .Color {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: #fff;
+      }
+
+      .button {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #4daea1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        color: aqua;
+      }
+
+      main > footer {
+        background-color: #333;
+      }
+
+      main > footer > a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+      }
+
+      main > footer > a:hover {
+        color: blue;
+      }
+
+      .copright {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/data-visualization-isolated-icon-simple-element-illustration-technology-concept-icons-editable-logo-sign-symbol-design-142287524.jpg"
+        height="200vh"
+        align="left"
+      />
+      <h1><center>DATA VISUALIZER</center></h1>
+    </header>
+    <hr />
+    <nav>
+      <a href="firstpage.html">HOME</a>
+      <a href="designchart.html">DESIGN CHART</a>
+      <a href="adddata.html">ADD DATA</a>
+      <a href="labelsandfonts.html">LABELS AND FONTS</a>
+      <a href="#">PREVIEW CHART</a>
+      <a href="#">SAVE AND SHARE</a>
+      <a href="#">HELP</a>
+    </nav>
+    <hr />
+    <br /><br />
+    <nav id="charts">
+      <p>Select The Type Of Chart</p>
+      <div>
+        <center>
+          <a href="#"
+            ><button>
+              <img src="img/bar-chart-vector-icon.jpg" height="150vh" /><br />
+              <p id="ggg">BAR</p>
+            </button></a
+          >
+          <a href="#"
+            ><button>
+              <img src="img/38807.png" height="150vh" /><br />
+              <p id="ggg">LINE</p>
+            </button></a
+          >
+          <a href="#"
+            ><button>
+              <img src="img/3690822.png" height="150vh" /><br />
+              <p id="ggg">AREA</p>
+            </button></a
+          >
+          <a href="#"
+            ><button>
+              <img
+                src="img/pie-chart-circle-ios-7-interface-symbol_318-35317.jpg"
+                height="150vh"
+              /><br />
+              <p id="ggg">PIE</p>
+            </button></a
+          >
+        </center>
+      </div>
+    </nav>
+    <hr />
+    <br /><br />
+    <main>
+      <form>
+        <h2>BAR</h2>
+        <div>
+          <fieldset>
+            <legend>Direction</legend>
+            <input type="radio" name="Direction" />vertical
+            <input type="radio" name="Direction" />Vertical Stacked
+            <input type="radio" name="Direction" />Horizontals
+            <input type="radio" name="Direction" />Horizontal Stacked
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Shapes</legend>
+            <input type="radio" name="Direction" />Cylinder
+            <input type="radio" name="Direction" />Rectangle
+          </fieldset>
+        </div>
+        <br />
+        <p>Style:</p>
+        <br />
+        <p class="property">Background Color:</p>
+        <input
+          type="color"
+          class="Color"
+          name="BGC"
+          value="#FFF000"
+        /><br />
+        <p class="property">Appearance:</p>
+        <select>
+          <option>2D</option>
+          <option>3D</option>
+        </select>
+        <p class="property">Gap:</p>
+        <select>
+          <option>Auto</option>
+          <option>Touch</option>
+          <option>10%</option>
+          <option>20%</option>
+          <option>30%</option>
+          <option>40%</option>
+          <option>50%</option>
+        </select>
+        <p class="property">Legend Position:</p>
+        <select>
+          <option>Top</option>
+          <option>Bottom</option>
+          <option>Left</option>
+          <option>Right</option>
+        </select>
+        <p class="property">Grid Line Color:</p>
+        <input type="color" class="Color" name="GLC" value="#FFF000" />
+        <p class="property">Grid Width:</p>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <p class="property">Grid Background Color:</p>
+        <input type="color" class="Color" name="GBGC" value="#FFF000" />
+        <p class="property">Background Gradient:</p>
+        <select>
+          <option>No</option>
+          <option>Yes</option>
+        </select>
+        <p class="property">Rounded Corners:</p>
+        <select>
+          <option>No</option>
+          <option>Yes</option>
+        </select>
+        <p class="property">Grid Background Gradient:</p>
+        <select>
+          <option>No</option>
+          <option>Yes</option>
+        </select>
+        <p class="property">Transparency:</p>
+        <select>
+          <option>No</option>
+          <option>Yes</option>
+        </select>
+        <p class="property">Grid Lines:</p>
+        <select>
+          <option>Vertical</option>
+          <option>Horizontal</option>
+          <option>Both</option>
+          <option>None</option>
+        </select>
+        <p class="property">Left Margin:</p>
+        <input type="text" name="LM" />
+        <p class="property">Right Margin:</p>
+        <input type="text" name="RM" />
+        <p class="property">Plot Area:</p>
+        <select>
+          <option>Tiny</option>
+          <option>Normal</option>
+          <option>Wide</option>
+        </select>
+        <a href="adddata.html">
+        <button class="button" type="button">Next</button></a>
+      </form><br>
+      <hr /><br>
+      <footer>
+        <a href="#">Privacy policy</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+        <a href="#" class="copyright">&copy;</a>
+      </footer>
+    </main>
+  </body>
+</html>

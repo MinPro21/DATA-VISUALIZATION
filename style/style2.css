@@ -1,0 +1,75 @@
+header > h1 {
+  padding: 50px;
+  text-align: center;
+  font-size: 80px;
+  color: darkorchid;
+  vertical-align: center;
+  font-family: serif;
+}
+main > form {
+  background-color: whitesmoke;
+  color: darkorchid;
+  border: 5px;
+  margin-right: 500px;
+  margin-left: 500px;
+  font-family: serif;
+  padding: 5px 20px 15px 20px;
+  border-radius: 10px;
+}
+main > form > h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+main > form > p {
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+main > form > fieldset {
+  font-size: 20px;
+}
+
+.button {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #4daea1;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: aqua;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer > a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+footer > a:hover {
+  color: blue;
+}
+
+.copright {
+  float: right;
+}
